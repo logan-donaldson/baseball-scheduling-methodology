@@ -9,31 +9,32 @@ First I correspond with league officials to better understand their unique sched
 
 # Schedule Template
 When creating a schedule I always start with a template. A template is an array which specifies on which days a baseball game will be played and which days are off-days. The template also groups games into series. Each series typically consists of 3 -5 games. Template creation is as much an art as a science. The league will specify on which days the season will start and end along with how many games need to played but on which days the games are played is left largely to my discretion. It's like a brainteaser in which I must find a way to fit the series into the alloted dates while adhering to some basic rules such as only 12 off-days, and no off-days on weekends. Below I have included an example template in which 0s are off-days and positive inetegers represent baseball games grouped by series number.
-
->M  T  W  T  F  S  S\
+```
+M  T  W  T  F  S  S
 0  0  0  1  1  1  1   week of Apr 8                      
-1  2  2  2  2  2  3   week of Apr 15\
-3  3  3  0  4  4  4   week of Apr 22\
-4  4  5  5  5  5  5   week of Apr 29\
-0  6  6  6  6  6  7   week of May 6\
-7  7  7  7  8  8  8   week of May 13\
-8  8  0  9  9  9  9   week of May 20\
-9  10 10 10 10 10 10  week of May 27\
-11 11 11 11 11 12 12  week of Jun 3\
-12 12 0  13 13 13 13  week of Jun 10\
-13 14 14 14 14 14 14  week of Jun 17\
-0  0  0  15 15 15 15  week of Jun 24\
-15 16 16 16 16 16 17  week of Jul 1\
-17 17 17 17 18 18 18  week of Jul 8\
-18 18 0  19 19 19 19  week of Jul 15\
-19 20 20 20 20 20 0   week of Jul 22\
-21 21 21 21 21 22 22  week of Jul 29\
-22 22 22 0  23 23 23  week of Aug 5\
-23 23 24 24 24 24 24  week of Aug 12\
-0  25 25 25 25 25 26  week of Aug 19\
-26 26 26 26 27 27 27  week of Aug 26\
-27 27 0  28 28 28 28  week of Sep 2\
-28 0  0  0  0  0  0   week of Sep 9\
+1  2  2  2  2  2  3   week of Apr 15
+3  3  3  0  4  4  4   week of Apr 22
+4  4  5  5  5  5  5   week of Apr 29
+0  6  6  6  6  6  7   week of May 6
+7  7  7  7  8  8  8   week of May 13
+8  8  0  9  9  9  9   week of May 20
+9  10 10 10 10 10 10  week of May 27
+11 11 11 11 11 12 12  week of Jun 3
+12 12 0  13 13 13 13  week of Jun 10
+13 14 14 14 14 14 14  week of Jun 17
+0  0  0  15 15 15 15  week of Jun 24
+15 16 16 16 16 16 17  week of Jul 1
+17 17 17 17 18 18 18  week of Jul 8
+18 18 0  19 19 19 19  week of Jul 15
+19 20 20 20 20 20 0   week of Jul 22
+21 21 21 21 21 22 22  week of Jul 29
+22 22 22 0  23 23 23  week of Aug 5
+23 23 24 24 24 24 24  week of Aug 12
+0  25 25 25 25 25 26  week of Aug 19
+26 26 26 26 27 27 27  week of Aug 26
+27 27 0  28 28 28 28  week of Sep 2
+28 0  0  0  0  0  0   week of Sep 9
+```
 
 
 The baseball scheduling problem is severly over-constrained. Broad classes of constraints include but are not limited to restrictions on the number of miles a team can travel, limitations on the number of times a team must spend an off day away from their home park, and requirements for the number of times a team must play intra-divisional rivals. In total there ~20 broad classes of constraints.  If each constraint were to be adhered to the problem would be infeasible. Thus, 
