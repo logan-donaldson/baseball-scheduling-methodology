@@ -10,10 +10,10 @@ First I correspond with league officials to better understand their unique sched
 # Schedule Template
 When creating a schedule I always start with a template. A template is an array which specifies on which days a baseball game will be played and which days are off-days. The template also groups games into series. Each series typically consists of 3 -5 games. Template creation is as much an art as a science. The league will specify on which days the season will start and end along with how many games need to played but on which days the games are played is left largely to my discretion. It's like a brainteaser in which I must find a way to fit the series into the alloted dates while adhering to some basic rules such as only 12 off-days, and no off-days on weekends. Below I have included an example template in which 0s are off-days and positive inetegers represent baseball games grouped by series number.
 
-M  T  W  T  F  S  S
-0  0  0  1  1  1  1   week of Apr 8                      
-1  2  2  2  2  2  3   week of Apr 15
-3  3  3  0  4  4  4   week of Apr 22
+M  T  W  T  F  S  S\
+0  0  0  1  1  1  1   week of Apr 8\                      
+1  2  2  2  2  2  3   week of Apr 15\
+3  3  3  0  4  4  4   week of Apr 22\
 4  4  5  5  5  5  5   week of Apr 29
 0  6  6  6  6  6  7   week of May 6
 7  7  7  7  8  8  8   week of May 13
