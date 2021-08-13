@@ -1,2 +1,11 @@
 # baseball-scheduling-methodology
-A summary of the integer linear programming methodology I used to develop schedules for Minor League Baseball.
+The broad integer linear programming methodology used to develop the Minor League Baseball schedules was developed by Dr. Anton Dahbura, an Associate Research Scientist in the Department of Computer Science and Executive Director of the Johns Hopkins University Information Security Institute and Dr. Donniell Fishkind, an Associate Research Professor in the Department of Applied Mathematics and Statistics. They layed the foundation for the optimization model. 
+
+## Summary of the Schedule Making Process
+My job is to adapt the model to produce viable schedules for specific scenarios. This involves first corresponding with league officials to better understand their unique scheduling requests. I then create a schedule template (explained below). Next, I write new classes of constraints, alter existing constraints, and, massage the coefficients of the objective functionto best model the specific scheduling problem. The optimization model is created in MATLAB and is then handed over to Gurobi to be solved on a SGI UV2000 System running Linux. With a typical model consisting of over 10000 variables and constraints each these problems are seldom solved to optimality. Rather I typically let the supercomputer churn on the problem for 1-3 days before interrupting the solver and extracting the best solution found so far. The solution comes in the form of a vector which is then fed into a macro-enabled Excel spreadsheet which generates an asthetically pleasing calendar schedule. This schedule is then sent to league officials, along with notes from myself detailing the schedule's strengths and weaknesses. A schedule may give each team an equal number of weekend home games (a desirable charcteristic) but require excessive amounts of travel. My job is simply to bring these tradeoffs to the attention of the league official who then makes a desicion
+
+# Schedule Template
+When creating a schedule
+
+The baseball scheduling problem is severly over-constrained. Broad classes of constraints include but are not limited to restrictions on the number of miles a team can travel, limitations on the number of times a team must spend an off day away from their home park, and requirements for the number of times a team must play intra-divisional rivals. In total there ~20 broad classes of constraints.  If each constraint were to be adhered to the problem would be infeasible. Thus, 
+
